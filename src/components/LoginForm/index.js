@@ -1,7 +1,7 @@
 import React from 'react';
 import './LoginForm.css';
 
-function LoginFrom(){
+function LoginForm(props){
     
     return (
         <div className="container">
@@ -19,7 +19,7 @@ function LoginFrom(){
                     </div>
                     <div className="form-control">
                         <label htmlFor="username">Email</label>
-                        <input type="email" placeholder="user@gmail.com" id="email" />
+                        <input type="email" placeholder={props.email} id="email" />
                         <i className="fas fa-check-circle" />
                         <i className="fas fa-exclamation-circle" />
                         <small>Error message</small>
@@ -45,4 +45,4 @@ function LoginFrom(){
     );
 }
 
-export default LoginFrom
+export default LoginForm

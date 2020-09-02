@@ -21,7 +21,7 @@ function App() {
   return (
       [<Header/>,
       <TabMenu items={icons}/>,
-      <LoginForm/>]
+      <LoginForm email='cyberpunk2076@gmail.com'/>]
   );
 }
 

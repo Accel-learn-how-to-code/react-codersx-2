@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './TabMenu.css';
 
-function TabMenu({items}){
+function TabMenu(props){
     return (
         <div className="tab-menu-container">
             <div className="item-list">
                 {
-                    items.map(x => (
+                    props.items.map(x => (
                         <div className="item">
                             <div className="icon-holder">
                                 <FontAwesomeIcon icon={x.icon} />
