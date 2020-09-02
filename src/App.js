@@ -3,19 +3,24 @@ import React from 'react';
 import LoginForm from './components/LoginForm/index';
 import Header from './components/Header/index';
 import TabMenu from './components/TabMenu/index'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+import { faGift } from '@fortawesome/free-solid-svg-icons'
+import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons'
+import { faMugHot } from '@fortawesome/free-solid-svg-icons'
+import { faCog } from '@fortawesome/free-solid-svg-icons'
 import './App.css';
 
 function App() {
-  // const list = [
-  //     'Go to market',
-  //     'Buy food',
-  //     'Make dinner'
-  // ];
-  // const listMap = list.map(x => <li>{x}</li>);
-  //<ul>{listMap}</ul>
+  const icons = [
+    {icon: faHome, label: 'Home'},
+    {icon: faGift, label: 'Deal'},
+    {icon: faCloudUploadAlt, label: 'Upload'},
+    {icon: faMugHot, label: 'Work'},
+    {icon: faCog, label: 'Setting'},
+  ];
   return (
       [<Header/>,
-      <TabMenu/>,
+      <TabMenu items={icons}/>,
       <LoginForm/>]
   );
 }
