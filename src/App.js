@@ -1,7 +1,8 @@
 import React from 'react';
 //import logo from './logo.svg';
-import LoginForm from './components/LoginForm';
-import Header from './components/Header';
+import LoginForm from './components/LoginForm/index';
+import Header from './components/Header/index';
+import TabMenu from './components/TabMenu/index'
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
   //<ul>{listMap}</ul>
   return (
       [<Header/>,
+      <TabMenu/>,
       <LoginForm/>]
   );
 }

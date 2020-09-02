@@ -1,0 +1,45 @@
+.tab-menu-container {
+    background-color: white;
+    color: #8E8E8E;
+    min-width: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-list {
+    margin: 30px 0;
+    display: flex;
+    flex-flow: row;
+}
+
+.item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem 3rem;
+    background: rgba(221, 221, 221, 0.5);
+    border: solid #eeeeee 2px;
+}
+
+.item:hover{
+    color: #8CDC52;
+    border-top-color: #8CDC52;
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+.icon-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 0;
+}
