@@ -1,0 +1,17 @@
+.RecommendedFriends-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.RecommendedFriends {
+    max-width: 450px;
+    border: 2px solid #dddddd;
+    border-radius: 20px;
+    background-color: #fafafa;
+    padding: 20px;
+    margin: 20px;
+}
+
+hr {
+    border-top: 1px dashed #dddddd;
+}

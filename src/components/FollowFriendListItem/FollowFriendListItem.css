@@ -1,0 +1,47 @@
+.items {
+    display: flex;
+    max-width: 1000px;
+    align-items: center;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+
+.image-container {
+    flex-basis: 50px;
+    height: 40px;
+    padding-bottom: 10px;
+}
+
+.image-container .image {
+    background-image: url(../../img/75238765_p4.png);
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.fa-trash-alt {
+    color: tomato;
+    font-size: 30px;
+}
+
+.title {
+    flex-grow: 1;
+    padding: 10px;
+}
+
+.title .name {
+    margin: 0;
+}
+
+.title .email {
+    margin: 0;
+    color: #9e9a9a;
+}
+
+.icon-container {
+    flex-basis: 40px;
+}

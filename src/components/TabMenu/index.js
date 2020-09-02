@@ -8,8 +8,8 @@ function TabMenu(props){
         <div className="tab-menu-container">
             <div className="item-list">
                 {
-                    props.items.map(x => (
-                        <div className="item">
+                    props.items.map((x, index) => (
+                        <div className="item" key={index}>
                             <div className="icon-holder">
                                 <FontAwesomeIcon icon={x.icon} />
                             </div>
