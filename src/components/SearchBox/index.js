@@ -6,18 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class SearchBox extends Component{
     state = {
+        fields: {},
         isFocused: false,
-        isNonLegit: false
+        isLegit: true
     };
-
-    // checkValue(event){
-    //     var x = event.target.value;
-    //     if(x.length > 10){
-    //         this.setState({
-    //             isNonLegit: true
-    //         });
-    //     }
-    // }
 
     render(){
         
@@ -26,15 +18,24 @@ class SearchBox extends Component{
                 <div className="input-holder">
                     <input 
                         className={classNames('searchBox', {
-                            isNonLegit: this.state.isNonLegit === true
+                            isNonLegit: this.state.isLegit === false
                         })} 
                         type="text" placeholder="Type something..." 
                         onChange={(event) => {
                             var x = event.target.value;
-                            if(x.length > 10){
-                                this.setState({
-                                    isNonLegit: true
-                                });
+                            console.log(x);
+                            if(x.length >= 10){
+                                console.log(x.slice(0, 2));
+                                if(x.slice(0, 3) !== '090'){
+                                    this.setState({
+                                        isLegit: false
+                                    });
+                                }
+                                if(x.length !== 10){
+                                    this.setState({
+                                        isLegit: false
+                                    });
+                                }
                             }
                         }} 
                         onFocus= {() => this.setState({isFocused: true})}
