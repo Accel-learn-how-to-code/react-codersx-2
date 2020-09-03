@@ -47,3 +47,27 @@
 .icon-container {
     flex-basis: 40px;
 }
+
+.Recommended-Friends-Header-Container{
+    display: flex;
+    align-items: center;
+}
+.bell{
+    margin: 10px;
+    padding: 7px;
+    font-size: 1.5rem;
+    position: relative;
+}
+.notic{
+    position: absolute;
+    background-color: red;
+    color: white;
+    font-size: 0.6rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border: 1px solid red;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
