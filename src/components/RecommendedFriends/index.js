@@ -10,7 +10,7 @@ function RecommendedFriends(props){
                 <h1>Accounts</h1>
                 <hr />
                 {
-                    props.friends.map((x, index) => (<FollowFriendListItem key={index} name={x.name} email={x.email} icon={faTrashAlt}/>))
+                    props.friends.map((x, index) => <FollowFriendListItem key={index} id={index} name={x.name} email={x.email} icon={faTrashAlt}/>)
                 }
             </div>
         </div>

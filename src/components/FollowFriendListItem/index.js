@@ -3,8 +3,13 @@ import './FollowFriendListItem.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function FollowFriendListItem(props){
+    let itemName = 'items'
+    let index = Number(props.id);
+    if(index === 0 || index % 2 === 0){
+        itemName += ' even';
+    }
     return(
-        <div className="items">
+        <div className= {itemName}>
             <div className="image-container">
                 <div className="image"></div>
             </div>

@@ -8,7 +8,9 @@
     margin-bottom: 10px;
     background-color: #ffffff;
 }
-
+.even{
+    background-color: #dddddd;
+}
 .image-container {
     flex-basis: 50px;
     height: 40px;
