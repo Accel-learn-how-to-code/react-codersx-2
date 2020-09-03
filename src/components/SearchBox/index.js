@@ -6,23 +6,41 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class SearchBox extends Component{
     state = {
-        isFocused: false
+        isFocused: false,
+        isNonLegit: false
     };
 
-    checkValue(event){
-        var x = event.target.value;
-        if(x)
-            console.log('123');
-    }
+    // checkValue(event){
+    //     var x = event.target.value;
+    //     if(x.length > 10){
+    //         this.setState({
+    //             isNonLegit: true
+    //         });
+    //     }
+    // }
 
     render(){
-        const {isFocused} = this.state;
+        
         return(
             <div className="search-container">
                 <div className="input-holder">
-                    <input id="searchBox" type="text" placeholder="Type something..." onChange={this.checkValue} onFocus= {() => this.setState({isFocused: true})}/>
+                    <input 
+                        className={classNames('searchBox', {
+                            isNonLegit: this.state.isNonLegit === true
+                        })} 
+                        type="text" placeholder="Type something..." 
+                        onChange={(event) => {
+                            var x = event.target.value;
+                            if(x.length > 10){
+                                this.setState({
+                                    isNonLegit: true
+                                });
+                            }
+                        }} 
+                        onFocus= {() => this.setState({isFocused: true})}
+                    />
                     <div className={classNames('search', {
-                        focus: isFocused === true
+                        focus: this.state.isFocused === true
                     })}>
                         <FontAwesomeIcon icon={faSearch}/>
                     </div>
