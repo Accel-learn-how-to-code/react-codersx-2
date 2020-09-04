@@ -1,10 +1,42 @@
-import React, { Component } from 'React'
-import './Modal.css'
+import React, { Component } from 'react';
+import classNames from 'classnames';
+import './Modal.css';
 
 class Modal extends Component{
+    state = {
+        modal: true
+    };
+
+    openModal(){
+        this.setState({
+            modal: true
+        });
+    };
+
+    closeModal(){
+        this.setState({
+            modal: false
+        });
+    };
     render(){
         return(
-
+            <div className="modal-container">
+                <button id="myBtn" onClick={() => this.openModal()}>
+                    Open Modal
+                </button>
+                <div id="myModal" className={classNames('modal', { openModal: this.state.modal === true})}>
+                    <div className="modal-content">
+                        <span className="close" onClick={() => this.closeModal()}>X</span>
+                        <p>Some text in the Modal..</p>
+                        <button className="close decline" onClick={() => this.closeModal()}>
+                            Decline
+                        </button>
+                        <button className="close accept" onClick={() => this.closeModal()}>
+                            Accept
+                        </button>
+                    </div>
+                </div>
+            </div>
         );
     }
 }

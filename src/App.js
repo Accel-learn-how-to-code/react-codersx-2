@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import TabMenu from './components/TabMenu/TabMenu';
 import RecommendedFriends from './components/RecommendedFriends/RecommendedFriends';
 import SearhBox from './components/SearchBox/SearchBox';
+import Modal from './components/Modal/Modal';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faGift } from '@fortawesome/free-solid-svg-icons';
 import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
@@ -34,6 +35,7 @@ class App extends Component {
       <Header/>,
       <TabMenu items={icons}/>,
       <SearhBox/>,
+      <Modal/>,
       <RecommendedFriends friends={friendList} />,
       <LoginForm email='cyberpunk2076@gmail.com'/>
     ]);
