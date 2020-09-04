@@ -3,7 +3,7 @@ import './RecommendedFriends.css';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { faBell } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import FollowFriendListItem from '../FollowFriendListItem/index';
+import FollowFriendListItem from '../FollowFriendListItem/FollowFriendListItem';
 
 function RecommendedFriends(props){
     return(

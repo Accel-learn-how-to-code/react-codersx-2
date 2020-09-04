@@ -41,7 +41,8 @@
 }
 
 .isNonLegit{
-    border-color: #F00;
+    border-color: #4A36EB;
+    background-color: rgb(252, 124, 124);
 }
 
 ::placeholder {

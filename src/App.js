@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 //import logo from './logo.svg';
-import LoginForm from './components/LoginForm/index';
-import Header from './components/Header/index';
-import TabMenu from './components/TabMenu/index';
-import RecommendedFriends from './components/RecommendedFriends/index';
-import SearhBox from './components/SearchBox/index';
+import LoginForm from './components/LoginForm/LoginForm';
+import Header from './components/Header/Header';
+import TabMenu from './components/TabMenu/TabMenu';
+import RecommendedFriends from './components/RecommendedFriends/RecommendedFriends';
+import SearhBox from './components/SearchBox/SearchBox';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faGift } from '@fortawesome/free-solid-svg-icons';
 import { faCloudUploadAlt } from '@fortawesome/free-solid-svg-icons';
