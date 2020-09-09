@@ -4,7 +4,7 @@ import './Modal.css';
 
 class Modal extends Component{
     state = {
-        modal: true
+        modal: false
     };
 
     openModal(){
@@ -18,7 +18,9 @@ class Modal extends Component{
             modal: false
         });
     };
+    
     render(){
+        const {content} = this.props;
         return(
             <div className="modal-container">
                 <button id="myBtn" onClick={() => this.openModal()}>
@@ -27,7 +29,7 @@ class Modal extends Component{
                 <div id="myModal" className={classNames('modal', { openModal: this.state.modal === true})}>
                     <div className="modal-content">
                         <span className="close" onClick={() => this.closeModal()}>X</span>
-                        <p>Some text in the Modal..</p>
+                        <p>{content}</p>
                         <button className="close decline" onClick={() => this.closeModal()}>
                             Decline
                         </button>

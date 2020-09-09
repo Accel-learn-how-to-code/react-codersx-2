@@ -35,7 +35,7 @@ class App extends Component {
       <Header/>,
       <TabMenu items={icons}/>,
       <SearhBox/>,
-      <Modal/>,
+      <Modal content="Craftopia"/>,
       <RecommendedFriends friends={friendList} />,
       <LoginForm email='cyberpunk2076@gmail.com'/>
     ]);
