@@ -20,7 +20,7 @@ class Modal extends Component{
     };
     
     render(){
-        const {content} = this.props;
+        const {children} = this.props;
         return(
             <div className="modal-container">
                 <button id="myBtn" onClick={() => this.openModal()}>
@@ -29,7 +29,7 @@ class Modal extends Component{
                 <div id="myModal" className={classNames('modal', { openModal: this.state.modal === true})}>
                     <div className="modal-content">
                         <span className="close" onClick={() => this.closeModal()}>X</span>
-                        <p>{content}</p>
+                        <p>{children}</p>
                         <button className="close decline" onClick={() => this.closeModal()}>
                             Decline
                         </button>
